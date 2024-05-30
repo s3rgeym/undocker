@@ -13,7 +13,7 @@ parser.add_argument(
 if __name__ == "__main__":
     args = parser.parse_args()
 
-    config_path: Path = args.config_path
+    config_path = args.config_path
 
     if config_path.exists():
         with config_path.open() as fp:
