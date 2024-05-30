@@ -25,6 +25,8 @@ if __name__ == "__main__":
         {
             "registry-mirrors": [
                 # "https://dockerhub.timeweb.cloud",
+                # http://hub-mirror.c.163.com,
+                # https://docker.mirrors.ustc.edu.cn,
                 "https://daocloud.io",
                 "https://c.163.com/",
                 "https://registry.docker-cn.com",
