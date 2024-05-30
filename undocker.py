@@ -63,6 +63,7 @@ def main(argv=None):
         print(GREEN + "Docker restarted" + CSI)
     except Exception as ex:
         print(RED + str(ex) + CSI)
+        return 1
 
 
 if __name__ == "__main__":
