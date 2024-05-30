@@ -62,7 +62,7 @@ def main(argv=None):
 
         print(GREEN + "Docker restarted" + CSI)
     except Exception as ex:
-        print(RED + str(ex) + CSI)
+        print(RED + "Error:", str(ex) + CSI)
         return 1
 
 
