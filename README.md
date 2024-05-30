@@ -3,7 +3,7 @@
 Добавляет в конфиг адреса зеркал, заставляя блядский докер работать.
 
 ```bash
-git clone https://github.com/s3ergeym/undocker
+git clone https://github.com/s3rgeym/undocker
 cd undocker
 sudo ./undocker.py
 ```
