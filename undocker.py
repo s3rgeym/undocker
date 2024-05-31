@@ -56,13 +56,13 @@ def main(argv=None):
             json.dumps(config, ensure_ascii=True, indent=2, sort_keys=True)
         )
 
-        print(GREEN + "Config succcessfully updated" + CSI)
+        print(GREEN + "Config succcessfully updated" + RESET)
 
         subprocess.check_call(["systemctl", "restart", "docker"])
 
-        print(GREEN + "Docker restarted" + CSI)
+        print(GREEN + "Docker restarted" + RESET)
     except Exception as ex:
-        print(RED + "Error:", str(ex) + CSI)
+        print(RED + "Error:", str(ex) + RESET)
         return 1
 
 
