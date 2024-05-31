@@ -16,6 +16,17 @@ YELLOW = CSI + "33m"
 BLUE = CSI + "34m"
 PURPLE = CSI + "35m"
 
+DOCKER_REGISTRY_MIRRORS = [
+    # "https://dockerhub.timeweb.cloud",
+    # "http://hub-mirror.c.163.com",
+    # "https://docker.mirrors.ustc.edu.cn",
+    "https://daocloud.io",
+    "https://c.163.com/",
+    "https://registry.docker-cn.com",
+    "https://mirror.gcr.io",
+    "https://huecker.io",
+]
+
 print = partial(print, file=sys.stderr, flush=True)
 
 
@@ -39,16 +50,7 @@ def main(argv=None):
 
         config.update(
             {
-                "registry-mirrors": [
-                    # "https://dockerhub.timeweb.cloud",
-                    # "http://hub-mirror.c.163.com",
-                    # "https://docker.mirrors.ustc.edu.cn",
-                    "https://daocloud.io",
-                    "https://c.163.com/",
-                    "https://registry.docker-cn.com",
-                    "https://mirror.gcr.io",
-                    "https://huecker.io",
-                ]
+                "registry-mirrors": sorted(DOCKER_REGISTRY_MIRRORS)
             }
         )
 
